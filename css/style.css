@@ -11,64 +11,65 @@ main{
     align-items: center;
     justify-content: center;
     font-family: "Mulish", sans-serif;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(101,71,154,1) 35%, rgba(0,212,255,1) 100%);
 }
 .titulo{
-    background-color: rgb(65, 63, 63);
     width: 100%;
     height: 20%;
-    color: white;
+    flex-direction: column;
+    color: rgb(54, 52, 52);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
+    font-size: 25px;
 
 }
 .titulo img{
-    width: 15%;
+    width: 50px;
+    margin-left: 10px;
 }
-
 .formulario{
-    width: 40vw;
+    width: 23vw;
     height: 60vh;
-    border: solid 1px black;
+    border: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    border-radius: 5px;
+    gap: 20px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    background-color: white;
 }
 
 .elemento-check{
     font-size: 18px;
+    width: 90%;
 }
  img{
     width: 10%;
     margin-right: 20px;
 
 }
-.elementos{
-    width: 80%;
+.elementos-input{
+    width: 90%;
     height: 20%;
     display: flex;  
-    flex-direction:column ;  
+    flex-direction:column;  
     align-items: center;
     justify-content: center;
+    gap: 10px;
+    
+}
+.elementos-input label{
+    align-self: flex-start;
+    font-size: 20px;
     
 }
 
-.elementos img{
-    align-self: flex-start;
-}
-.titulo-elemento{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    font-size: 18px;
-}
+
 input[type="email"], input[type="password"]{
-    width: 270px;
-    height: 30px;
+    width: 96%;
+    height: 35px;
     border: solid 1px rgb(146, 140, 140);
     border-radius: 5px;
     font-size: 15px;
