@@ -15,83 +15,102 @@
     </header>
 
     <main>
-
         <form action="">
-            <div class="conteiner-cadastro">
+            <div class="formulario">
                 <div class="titulo">
-                    <h1>Cadastro do Usuário</h1>
+                    <h1>Cadastro</h1>
+                    <hr style="width:40%; height: 5px; background-color: black; border-radius:20px; margin-top: 10px;">
                 </div>
-                <div class="elemento">
-                    <h2>Dados pessoas</h2>
-                    <div class="elemento-input">
-                        <label for="nome">Seu Nome</label>
-                        <input type="text">
+                <fieldset>
+                    <legend>DADOS PESSOAIS</legend>
+
+                    <label for="nome">Digite o seu nome:</label>
+                    <input type="text">
+
+                    <label for="idade">Digite a sua idade:</label>
+                    <input type="number">
+
+                    <label for="data-nascimento">Digite sua data de nascimento:</label>
+                    <input type="date" name="" id="">
+
+                    <label for="local">Digite sua localização:</label>
+                    <div class="localizao">
+                        <input type="text" placeholder="CIDADE">
+                        <input type="text" placeholder="UF">
+                        <input type="text" placeholder="ENDEREÇO" id="endereco">
                     </div>
+                </fieldset>
 
-                    <div class="elemento-input">
-                        <label for="sobrenome">Seu Sobrenome</label>
-                        <input type="text">
+                <fieldset>
+                    <legend>DADOS ACADEMICOS</legend>
+                    <label for="formação">Qual é a sua formação?</label>
+                    <select>
+                        <option value="" selected></option>
+                        <option value="">Matemática</option>
+                        <option value="">Física</option>
+                        <option value="">Eng. Elétrica</option>
+                        <option value="">Eng. Mecânica</option>
+                        <option value="">Sist. de Informação</option>
+                    </select>
+
+                    <label for="nivel-academico">Qual é o seu nível academico?</label>
+                    <select name="" id="">
+                        <option value="" selected></option>
+                        <option value="">Licenciatura</option>
+                        <option value="">Bacharelado</option>
+                        <option value="">Pós-graduação</option>
+                        <option value="">Mestrado</option>
+                        <option value="">Dotorado</option>
+                    </select>
+
+                    <label for="trabalho">Atualmente trabalha?</label>
+                    <select name="" id="">
+                        <option value="" selected></option>
+                        <option value="">Sim</option>
+                        <option value="">Não</option>
+                    </select>
+
+                    <label for="textarea">Liste algumas especialidades</label>
+                    <textarea name="" id="" cols="10" rows="10"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>DADOS CADASTRAIS</legend>
+                    <label for="email">Informe o seu email</label>
+                    <input type="email">
+
+                    <label for="pass">Crie uma senha</label>
+                    <input type="password">
+
+                    <label for="telefone">Informe o seu número telefônico</label>
+                    <div class="telefone">
+                        <input type="tel" placeholder="DDD" style="width: 40px; text-align: left;">
+                        <input type="tel" placeholder="NÚMERO">
                     </div>
+                    
+                    
 
-                    <div class="elemento-input">
-                        <label for="idade">Informe sua idade</label>
-                        <input type="number">
-                    </div>
+                    <label>Adicione seu diploma<span style="font-weight: 700;">(.pdf,.word, .jpg, .jpeg )</span></label>
+                    <input type="file" name="" id="">
 
+                </fieldset>
 
+                <div class="termos">
+                    <label for="label-termos">Enviar esses dados de acordo com os termos da <span style="color:blue;">Instituicão</span>?</label>
+                    <input type="checkbox">
                 </div>
 
-                <div class="elemento">
-                    <h2>Conta</h2>
-                    <div class="elemento-input">
-                        <label for="email">Informe seu Email</label>
-                        <input type="email">
-                    </div>
-
-                    <div class="elemento-input">
-                        <label for="senha">Crie uma senha</label>
-                        <input type="password">
-                    </div>
-        
-                </div>
-
-                <div class="elemento">
-                    <h2>Customize seu personagem</h2>
-
-                    <div class="elemento-input">
-                        <label for="personagem">Escolha a classe do seu personagem?</label>
-
-                        <select name="" id="">
-                            <option value="" selected></option>
-                            <option value="bruxo">Bruxo</option>
-                            <option value="">Guerreiro</option>
-                            <option value="">Mago</option>
-                            <option value="">Titã</option>
-                            <option value="">Estrategista</option>
-                        </select>
-                    </div>
-
-                    <div class="elemento-input">
-                        <label for="">Qual sexo do seu personagem?</label>
-                        <select name="" id="">
-                            <option value="">Masculino</option>
-                            <option value="">Feminino</option>
-                        </select>
-                    </div>
-
-                </div>
-
-                <div class="elemento-check">
-                    <label for="">Concorda com os termos?</label>
-                    <input type="checkbox" name="" id="">
-                </div>
-
-                <div class="elemento-button">
+                <div class="elemento-input">
                     <input type="submit" value="Enviar">
                 </div>
+
+                <nav>
+                    <img src="imagens/icon-voltar.png" alt="">
+                    <a href="index.html">Voltar para tela de login</a>
+                </nav>
+
             </div>
         </form>
-        </div>
     </main>
 </body>
 
