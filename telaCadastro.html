@@ -21,24 +21,44 @@
                     <h1>Cadastro</h1>
                     <hr style="width:40%; height: 5px; background-color: black; border-radius:20px; margin-top: 10px;">
                 </div>
-                <fieldset>
+                <fieldset class="dados-pessoais">
                     <legend>DADOS PESSOAIS</legend>
-
-                    <label for="nome">Digite o seu nome:</label>
-                    <input type="text">
-
-                    <label for="idade">Digite a sua idade:</label>
-                    <input type="number">
-
-                    <label for="data-nascimento">Digite sua data de nascimento:</label>
-                    <input type="date" name="" id="">
-
-                    <label for="local">Digite sua localização:</label>
-                    <div class="localizao">
-                        <input type="text" placeholder="CIDADE">
-                        <input type="text" placeholder="UF">
-                        <input type="text" placeholder="ENDEREÇO" id="endereco">
+                    <div class="campo-texto">
+                        <div class="campo-texto-nome">
+                            <label for="nome">Digite o seu nome:</label>
+                            <input type="text">
+                        </div>
                     </div>
+
+
+                    <div class="campo-pequeno">
+                        <div class="campo">
+                            <label for="idade">Digite a sua idade:</label>
+                            <input type="number">
+                        </div>
+
+                        <div class="campo">
+                            <label for="data-nascimento">Digite sua data de nascimento:</label>
+                            <input type="date" name="" id="">
+                        </div>
+    
+                    </div>
+
+                    <div class="sexo-usuario">
+                        <label for="local">Digite seu sexo:</label>
+                        <div class="conteiner-combo">
+                            <div class="combo">
+                                <label for="M">Masculino</label>
+                                <input type="radio" id="">
+                            </div>
+                            <div class="combo">
+                                <label for="F">Feminino</label>
+                                <input type="radio" name="" id="">
+                            </div>
+                        </div>
+                        </div>
+                        
+
                 </fieldset>
 
                 <fieldset>
@@ -87,16 +107,19 @@
                         <input type="tel" placeholder="DDD" style="width: 40px; text-align: left;">
                         <input type="tel" placeholder="NÚMERO">
                     </div>
-                    
-                    
 
-                    <label>Adicione seu diploma<span style="font-weight: 700;">(.pdf,.word, .jpg, .jpeg )</span></label>
-                    <input type="file" name="" id="">
+
+                    <div class="ficheiro">
+                        <label>Adicione seu diploma<span style="font-weight: 700;">(.pdf,.word, .jpg, .jpeg )</span></label>
+                        <input type="file" name="" id="">
+                    </div>
+                    
 
                 </fieldset>
 
                 <div class="termos">
-                    <label for="label-termos">Enviar esses dados de acordo com os termos da <span style="color:blue;">Instituicão</span>?</label>
+                    <label for="label-termos">Enviar esses dados de acordo com os termos da <span
+                            style="color:blue;">Instituicão</span>?</label>
                     <input type="checkbox">
                 </div>
 
