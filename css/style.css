@@ -24,6 +24,9 @@ main{
     font-size: 25px;
 
 }
+label{
+    margin-left: 3px;
+}
 .titulo img{
     width: 50px;
     margin-left: 10px;
