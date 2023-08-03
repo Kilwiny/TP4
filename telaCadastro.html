@@ -23,102 +23,117 @@
                 </div>
                 <fieldset class="dados-pessoais">
                     <legend>DADOS PESSOAIS</legend>
-                    <div class="campo-texto">
-                        <div class="campo-texto-nome">
-                            <label for="nome">Digite o seu nome:</label>
-                            <input type="text">
-                        </div>
+                    
+                    <div class="campo">
+                        <label for="nome">Nome do Usuário:</label>
+                        <input type="text">
                     </div>
 
 
                     <div class="campo-pequeno">
                         <div class="campo">
-                            <label for="idade">Digite a sua idade:</label>
-                            <input type="number">
+                            <label for="idade">Idade do Usuário:</label>
+                            <input type="number" min="20">
                         </div>
 
                         <div class="campo">
-                            <label for="data-nascimento">Digite sua data de nascimento:</label>
+                            <label for="data-nascimento">Data de Nascimento</label>
                             <input type="date" name="" id="">
                         </div>
     
                     </div>
 
                     <div class="sexo-usuario">
-                        <label for="local">Digite seu sexo:</label>
+                        <label for="local">Sexo do Usuário</label>
                         <div class="conteiner-combo">
                             <div class="combo">
                                 <label for="M">Masculino</label>
-                                <input type="radio" id="">
+                                <input type="radio" id="" name="radio">
                             </div>
                             <div class="combo">
                                 <label for="F">Feminino</label>
-                                <input type="radio" name="" id="">
+                                <input type="radio" name="radio" id="">
                             </div>
                         </div>
-                        </div>
-                        
-
-                </fieldset>
-
-                <fieldset>
-                    <legend>DADOS ACADEMICOS</legend>
-                    <label for="formação">Qual é a sua formação?</label>
-                    <select>
-                        <option value="" selected></option>
-                        <option value="">Matemática</option>
-                        <option value="">Física</option>
-                        <option value="">Eng. Elétrica</option>
-                        <option value="">Eng. Mecânica</option>
-                        <option value="">Sist. de Informação</option>
-                    </select>
-
-                    <label for="nivel-academico">Qual é o seu nível academico?</label>
-                    <select name="" id="">
-                        <option value="" selected></option>
-                        <option value="">Licenciatura</option>
-                        <option value="">Bacharelado</option>
-                        <option value="">Pós-graduação</option>
-                        <option value="">Mestrado</option>
-                        <option value="">Dotorado</option>
-                    </select>
-
-                    <label for="trabalho">Atualmente trabalha?</label>
-                    <select name="" id="">
-                        <option value="" selected></option>
-                        <option value="">Sim</option>
-                        <option value="">Não</option>
-                    </select>
-
-                    <label for="textarea">Liste algumas especialidades</label>
-                    <textarea name="" id="" cols="10" rows="10"></textarea>
-                </fieldset>
-
-                <fieldset>
-                    <legend>DADOS CADASTRAIS</legend>
-                    <label for="email">Informe o seu email</label>
-                    <input type="email">
-
-                    <label for="pass">Crie uma senha</label>
-                    <input type="password">
-
-                    <label for="telefone">Informe o seu número telefônico</label>
-                    <div class="telefone">
-                        <input type="tel" placeholder="DDD" style="width: 40px; text-align: left;">
-                        <input type="tel" placeholder="NÚMERO">
-                    </div>
-
-
-                    <div class="ficheiro">
-                        <label>Adicione seu diploma<span style="font-weight: 700;">(.pdf,.word, .jpg, .jpeg )</span></label>
-                        <input type="file" name="" id="">
                     </div>
                     
 
                 </fieldset>
 
+                <fieldset>
+                    <legend>DADOS ACADEMICOS</legend>
+
+                    <div class="campo">
+                        <label for="formação">Qual é a sua formação?</label>
+                        <select>
+                            <option value="" selected></option>
+                            <option value="">Matemática</option>
+                            <option value="">Física</option>
+                            <option value="">Eng. Elétrica</option>
+                            <option value="">Eng. Mecânica</option>
+                            <option value="">Sist. de Informação</option>
+                        </select>
+                    </div>
+                  
+                    <div class="campo">
+                        <label for="nivel-academico">Qual é o seu nível academico?</label>
+                        <select name="" id="">
+                            <option value="" selected></option>
+                            <option value="">Licenciatura</option>
+                            <option value="">Bacharelado</option>
+                            <option value="">Pós-graduação</option>
+                            <option value="">Mestrado</option>
+                            <option value="">Dotorado</option>
+                        </select>
+                    </div>
+                    
+
+                    <div class="campo">
+                        <label for="trabalho">Atualmente trabalha?</label>
+                        <select name="" id="">
+                            <option value="" selected></option>
+                            <option value="">Sim</option>
+                            <option value="">Não</option>
+                        </select>
+                    </div>
+                   
+                    <div class="campo">
+                        <label for="textarea">Liste algumas especialidades</label>
+                        <textarea name="" id="" cols="10" rows="10"></textarea>
+                    </div>
+
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>DADOS CADASTRAIS</legend>
+                    <div class="campo">
+                        <label for="email">Informe o seu email</label>
+                        <input type="email">
+                    </div>
+                  
+                    <div class="campo">
+                        <label for="pass">Crie uma senha</label>
+                        <input type="password">
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Informe o seu número telefônico</label>
+                        <div class="telefone">
+                            <input type="tel" placeholder="DDD" style="width: 40px; text-align: left;">
+                            <input type="tel" placeholder="NÚMERO" style="width:200px">
+                        </div>
+                    </div>
+
+                   <div class="campo">
+                        <label>Adicione seu diploma<span style="font-weight: 700;">(.pdf,.word, .jpg, .jpeg )</span></label>
+                        <input type="file" name="" id="">
+                   </div>
+
+                </fieldset>
+
                 <div class="termos">
-                    <label for="label-termos">Enviar esses dados de acordo com os termos da <span
+                    <label for="label-termos" class="label-termos">Enviar esses dados de acordo com os termos da <span
                             style="color:blue;">Instituicão</span>?</label>
                     <input type="checkbox">
                 </div>
