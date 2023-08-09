@@ -25,36 +25,37 @@
                     <legend>DADOS PESSOAIS</legend>
                     
                     <div class="campo">
-                        <label for="nome">Nome do Usuário:</label>
+                        <label for="nome">Nome</label>
                         <input type="text">
                     </div>
 
-
-                    <div class="campo-pequeno">
-                        <div class="campo">
-                            <label for="idade">Idade do Usuário:</label>
-                            <input type="number" min="20">
-                        </div>
-
-                        <div class="campo">
-                            <label for="data-nascimento">Data de Nascimento</label>
-                            <input type="date" name="" id="">
+                    <div id="grande-campo">
+                        <div class="campo-pequeno">
+                            <div class="campo">
+                                <label for="idade">Idade</label>
+                                <input type="number" min="20">
+                            </div>
+    
+                            <div class="campo">
+                                <label for="data-nascimento">Nascimento</label>
+                                <input type="date" name="" id="">
+                            </div>
+        
                         </div>
     
-                    </div>
-
-                    <div class="sexo-usuario">
-                        <label for="local">Sexo do Usuário</label>
-                        <div class="conteiner-combo">
-                            <div class="combo">
-                                <label for="M">Masculino</label>
-                                <input type="radio" id="" name="radio">
+                        <div class="sexo-usuario" style="display: flex; flex-direction: column; gap: 10px;">
+                            <label for="local">Sexo do Usuário</label>
+                            <div class="conteiner-combo">
+                                <div class="combo">
+                                    <input type="radio" id="" name="radio">
+                                    <label for="M">Masculino</label>
+                                </div>
+                                <div class="combo">
+                                    <input type="radio" name="radio" id="">
+                                    <label for="F">Feminino</label>
+                                </div>
                             </div>
-                            <div class="combo">
-                                <label for="F">Feminino</label>
-                                <input type="radio" name="radio" id="">
-                            </div>
-                        </div>
+                        </div>    
                     </div>
                     
 
@@ -120,7 +121,7 @@
                     <div class="campo">
                         <label for="telefone">Informe o seu número telefônico</label>
                         <div class="telefone">
-                            <input type="tel" placeholder="DDD" style="width: 40px; text-align: left;">
+                            <input type="tel" placeholder="DDD" style="width: 57px; text-align: left;">
                             <input type="tel" placeholder="NÚMERO" style="width:200px">
                         </div>
                     </div>
