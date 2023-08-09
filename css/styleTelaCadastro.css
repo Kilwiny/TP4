@@ -1,43 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
 
-:root{
-    --tam:88%;
+:root {
+    --tam: 90%;
 }
-main{
+
+main {
     width: 100vw;
     height: 170vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    font-family: 'Mulish',sans-serif;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(101,71,154,1) 35%, rgba(0,212,255,1) 100%);
-    background-size: cover;
-    
+    font-family: 'Mulish', sans-serif;
+
+
+    background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
 }
 
-.formulario{
+@keyframes gradient {
+    0% {
+        background-position: 0%
+    }
+
+    100% {
+        background-position: 100%
+    }
+}
+
+.formulario {
     margin-top: 100px;
-    width: 38vw;
+    width: 45vw;
     height: 150vh;
     padding-bottom: 30px;
     background-color: white;
-    border:0;
+    border: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     border-radius: 10px;
-  
+
 }
-.formulario .titulo{
+
+.formulario .titulo {
     /*border: solid 1px black;*/
     width: 100%;
     padding-top: 25px;
-    padding-bottom:35px;
+    padding-bottom: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +61,7 @@ main{
     font-size: 25px;
 }
 
-.formulario fieldset{
+.formulario fieldset {
     width: var(--tam);
     height: 40%;
     display: flex;
@@ -57,31 +73,43 @@ main{
     border: solid 1px rgb(77, 76, 76);
 }
 
-.formulario fieldset legend{
+.formulario fieldset legend {
     font-weight: 700;
     margin-left: 20px;
-    padding-left:10px;
+    padding-left: 10px;
     padding-right: 10px;
     color: black;
 }
 
-input, label,select{
-    margin-left:20px;
+input,
+label,
+select {
+    margin-left: 20px;
 }
-input[type="number"],input[type="date"],select{
+
+input[type="number"],
+input[type="date"],
+select {
     width: 70%;
-    
+
 }
 
+#grande-campo {
 
-input,select{
+    display: flex;
+    align-items: center;
+}
+
+input,
+select {
     width: 93%;
     border-radius: 5px;
     border: solid 1px rgb(65, 63, 63);
     height: 30px;
 }
+
 /* CUIDANDO DOS DADOS PESSOAS DO PRIMEIRO FIELDSET*/
-.formulario .dados-pessoais{
+.formulario .dados-pessoais {
     width: var(--tam);
     height: 25%;
     display: flex;
@@ -93,24 +121,25 @@ input,select{
     border: solid 1px rgb(77, 76, 76);
 }
 
-input[type="text"]{
+input[type="text"] {
     width: 92%;
 }
 
-.formulario .dados-pessoais legend{
+.formulario .dados-pessoais legend {
     font-weight: 700;
     margin-left: 20px;
-    padding-left:10px;
+    padding-left: 10px;
     padding-right: 10px;
     color: black;
 }
-.formulario .dados-pessoais .campo-texto{
+
+.formulario .dados-pessoais .campo-texto {
     /*border: solid 1px black;*/
     width: 90%;
     height: 20%;
 }
 
-.formulario .dados-pessoais .campo-texto .campo-texto-nome{
+.formulario .dados-pessoais .campo-texto .campo-texto-nome {
     /*background-color: red;*/
     height: 100px;
     display: flex;
@@ -118,70 +147,71 @@ input[type="text"]{
     gap: 10px;
 }
 
-.formulario .dados-pessoais .campo-pequeno{
+.formulario .dados-pessoais .campo-pequeno {
     width: 90%;
     display: flex;
     gap: 5px;
 }
 
-.formulario .dados-pessoais.campo-pequeno .campo{
+.formulario .dados-pessoais.campo-pequeno .campo {
     display: flex;
     flex-direction: column;
-   
 }
 
-.campo{
+.campo {
     width: 100%;
     display: flex;
     flex-direction: column;
     /*border: solid 1px black;*/
     justify-content: center;
-    
+    gap: 10px;
+
 }
 
 
 
-.formulario fieldset .campo-pequeno .campo input[type='number']{
-   width: 100px;
-   margin-top: 10px;
+.formulario fieldset .campo-pequeno .campo input[type='number'] {
+    width: 100px;
 }
 
-.formulario fieldset .campo-pequeno .campo input[type='date']{
-    margin-top: 10px;
+.formulario fieldset .campo-pequeno .campo input[type='date'] {
     width: 130px;
- }
-.formulario fieldset .sexo-usuario{
+}
+
+.formulario fieldset .sexo-usuario {
     width: 90%;
     margin-left: 20px;
-  /* border: solid 1px black;*/
+    /* border: solid 1px black;*/
     display: flex;
     flex-direction: column;
 
 }
-.formulario fieldset .sexo-usuario label{
-    margin-left:25px;
-}
-.formulario fieldset .sexo-usuario .conteiner-combo{
+
+
+
+.formulario fieldset .sexo-usuario .conteiner-combo {
     display: flex;
     flex-direction: row;
     width: 90%;
-    margin-left: 18px;
-    gap: 50px;
+    margin-left: 5px;
+    gap: 5px;
     /*border: solid 1px red;*/
 }
-.formulario fieldset .sexo-usuario .combo{
-  /*  border: solid 1px black;*/
+
+.formulario fieldset .sexo-usuario .combo {
+    /*  border: solid 1px black;*/
     display: flex;
     align-items: center;
-    margin-left: 4px;
+    margin-left: 0;
 }
 
 /*-----------------------------------------------------------*/
 
-label{
+label {
     font-size: 20px;
 }
-.elemento-input{
+
+.elemento-input {
     /*border: solid 1px black;*/
     width: 70%;
     height: 50px;
@@ -189,14 +219,15 @@ label{
     justify-content: center;
 }
 
-input,select{
+input,
+select {
     font-size: 18px;
-    padding-left:5px;
+    padding-left: 5px;
     color: rgb(36, 35, 35);
 }
 
 
-.elemento-input input[type="submit"]{
+.elemento-input input[type="submit"] {
     width: 50%;
     height: 98%;
     font-size: 20px;
@@ -204,22 +235,25 @@ input,select{
     color: white;
     font-weight: 700;
 }
-textarea{
-    width:440px;
+
+textarea {
+    width: 93%;
     height: 80px;
-    margin-left:20px;
+    margin-left: 20px;
 }
-.elemento-input input[type="submit"]:hover{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(47,47,54,1) 35%, rgba(0,212,255,1) 100%);
+
+.elemento-input input[type="submit"]:hover {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(47, 47, 54, 1) 35%, rgba(0, 212, 255, 1) 100%);
 
 }
 
-.formulario .termos{
+.formulario .termos {
     display: flex;
     align-items: center;
 }
-nav{
-   /* border: solid 1px black;*/
+
+nav {
+    /* border: solid 1px black;*/
     display: flex;
     width: 40%;
     align-items: center;
@@ -227,22 +261,23 @@ nav{
     gap: 10px;
 
 }
-nav a{
+
+nav a {
     text-decoration: none;
 }
-.ficheiro{
-   /* background-color: gray;*/
+
+.ficheiro {
+    /* background-color: gray;*/
     width: 90%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 10px;
 }
-input[type='file']{
+
+input[type='file'] {
     border: 0;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     width: 15px;
 }
-
-
-
