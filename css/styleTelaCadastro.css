@@ -10,14 +10,11 @@
 }
 
 main {
-    width: 100vw;
-    height: 170vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     font-family: 'Mulish', sans-serif;
-
-
+    scroll-snap-type: y mandatory;
     background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
     background-size: 600% 100%;
     animation: gradient 16s linear infinite;
