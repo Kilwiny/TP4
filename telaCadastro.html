@@ -21,42 +21,33 @@
                     <h1>Cadastro</h1>
                     <hr style="width:40%; height: 5px; background-color: black; border-radius:20px; margin-top: 10px;">
                 </div>
-                <fieldset class="dados-pessoais">
+                <fieldset>
                     <legend>DADOS PESSOAIS</legend>
-                    
                     <div class="campo">
-                        <label for="nome">Nome</label>
+                        <label for="name">Nome</label>
                         <input type="text">
                     </div>
 
-                    <div id="grande-campo">
-                        <div class="campo-pequeno">
-                            <div class="campo">
-                                <label for="idade">Idade</label>
-                                <input type="number" min="20">
-                            </div>
-    
-                            <div class="campo">
-                                <label for="data-nascimento">Nascimento</label>
-                                <input type="date" name="" id="">
-                            </div>
-        
+
+                    <div class="conteiner-user">
+                        <div class="idade">
+                            <label for="idade">Idade</label>
+                            <input type="number" min="18">
                         </div>
-    
-                        <div class="sexo-usuario" style="display: flex; flex-direction: column; gap: 10px;">
-                            <label for="local">Sexo do Usuário</label>
-                            <div class="conteiner-combo">
-                                <div class="combo">
-                                    <input type="radio" id="" name="radio">
-                                    <label for="M">Masculino</label>
-                                </div>
-                                <div class="combo">
-                                    <input type="radio" name="radio" id="">
-                                    <label for="F">Feminino</label>
-                                </div>
-                            </div>
-                        </div>    
+                        <div class="dataNascimento">
+                            <label for="">Nascimento</label>
+                            <input type="date">
+                        </div>
+                        <div class="sexo">
+                            <label for="sexo">Sexo</label>
+                            <select name="" id="">
+                                <option value="" selected></option>
+                                <option value="">Masculino</option>
+                                <option value="">Feminino</option>
+                            </select>
+                        </div>
                     </div>
+                   
                     
 
                 </fieldset>
@@ -121,8 +112,8 @@
                     <div class="campo">
                         <label for="telefone">Informe o seu número telefônico</label>
                         <div class="telefone">
-                            <input type="tel" placeholder="DDD" style="width: 57px; text-align: left;">
-                            <input type="tel" placeholder="NÚMERO" style="width:200px">
+                            <input type="text" placeholder="(XXX)">
+                            <input type="text" placeholder="XXXX-XXXX" >
                         </div>
                     </div>
 
@@ -134,8 +125,7 @@
                 </fieldset>
 
                 <div class="termos">
-                    <label for="label-termos" class="label-termos">Enviar esses dados de acordo com os termos da <span
-                            style="color:blue;">Instituicão</span>?</label>
+                    <label for="label-termos" class="label-termos">Concordar como os termos da <span style="color:blue;">Instituicão</span>?</label>
                     <input type="checkbox">
                 </div>
 

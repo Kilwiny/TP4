@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
-
+/*
+    Terminar a responsividade
+*/
 * {
     padding: 0;
     margin: 0;
@@ -16,7 +18,7 @@ main {
     font-family: 'Mulish', sans-serif;
     scroll-snap-type: y mandatory;
     background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
-    background-size: 600% 100%;
+    background-size: 600% 300%;
     animation: gradient 16s linear infinite;
     animation-direction: alternate;
 }
@@ -34,7 +36,6 @@ main {
 .formulario {
     margin-top: 100px;
     width: 45vw;
-    height: 150vh;
     padding-bottom: 30px;
     background-color: white;
     border: 0;
@@ -78,23 +79,80 @@ main {
     color: black;
 }
 
+.campo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  /* border: solid 1px black;*/
+}
+
+.campo input[type="text"]{
+    width: 90%;
+}
+/*terminar de construir e colocar media-query*/
+.conteiner-user{
+    width: 100%;
+    gap: 15px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.idade{
+    gap: 2px;
+    width: 30%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    /*border: solid 1px black;*/
+}
+
+.idade input{
+    width: 70px;
+}
+
+.dataNascimento{
+    gap: 2px;
+    width: 30%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    /*border: solid 1px black;*/
+}
+
+.dataNascimento input{
+    width: 70px;
+    height: 50px;
+    font-size: 12px;
+}
+
+
+.sexo{
+    width: 30%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sexo select{
+    width: 80px;
+    font-size: 13px;
+}
 input,
 label,
 select {
     margin-left: 20px;
 }
 
+
 input[type="number"],
 input[type="date"],
 select {
     width: 70%;
 
-}
-
-#grande-campo {
-
-    display: flex;
-    align-items: center;
 }
 
 input,
@@ -104,105 +162,6 @@ select {
     border: solid 1px rgb(65, 63, 63);
     height: 30px;
 }
-
-/* CUIDANDO DOS DADOS PESSOAS DO PRIMEIRO FIELDSET*/
-.formulario .dados-pessoais {
-    width: var(--tam);
-    height: 25%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: space-around;
-    padding-bottom: 5px;
-    border-radius: 5px;
-    border: solid 1px rgb(77, 76, 76);
-}
-
-input[type="text"] {
-    width: 92%;
-}
-
-.formulario .dados-pessoais legend {
-    font-weight: 700;
-    margin-left: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: black;
-}
-
-.formulario .dados-pessoais .campo-texto {
-    /*border: solid 1px black;*/
-    width: 90%;
-    height: 20%;
-}
-
-.formulario .dados-pessoais .campo-texto .campo-texto-nome {
-    /*background-color: red;*/
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.formulario .dados-pessoais .campo-pequeno {
-    width: 90%;
-    display: flex;
-    gap: 5px;
-}
-
-.formulario .dados-pessoais.campo-pequeno .campo {
-    display: flex;
-    flex-direction: column;
-}
-
-.campo {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /*border: solid 1px black;*/
-    justify-content: center;
-    gap: 10px;
-
-}
-
-
-
-.formulario fieldset .campo-pequeno .campo input[type='number'] {
-    width: 100px;
-}
-
-.formulario fieldset .campo-pequeno .campo input[type='date'] {
-    width: 130px;
-}
-
-.formulario fieldset .sexo-usuario {
-    width: 90%;
-    margin-left: 20px;
-    /* border: solid 1px black;*/
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-
-.formulario fieldset .sexo-usuario .conteiner-combo {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin-left: 5px;
-    gap: 5px;
-    /*border: solid 1px red;*/
-}
-
-.formulario fieldset .sexo-usuario .combo {
-    /*  border: solid 1px black;*/
-    display: flex;
-    align-items: center;
-    margin-left: 0;
-}
-
-/*-----------------------------------------------------------*/
 
 label {
     font-size: 20px;
@@ -231,6 +190,12 @@ select {
     background-color: black;
     color: white;
     font-weight: 700;
+}
+
+.telefone{
+    /*border: solid 1px black;*/
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 textarea {
@@ -277,4 +242,56 @@ input[type='file'] {
 
 input[type="checkbox"] {
     width: 15px;
+}
+
+.telefone, input[type='text']:nth-child(1){
+    width: 60px;
+}
+
+.telefone, input[type='text']:nth-child(2){
+    width: 130px;
+}
+@media screen and (min-width:900px)  and (max-width:1024px){
+    
+}    
+@media screen and (min-width: 700px) and (max-width:800px) {
+    .formulario{
+        width: 65vw;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width:700px) {
+    .formulario{
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width:500px) {
+    .formulario{
+        width: 85vw;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width:400px) {
+    .formulario{
+        width: 90vw;
+    }
+    
+    input[type='text'], input[type='email'], input[type='password'],select:nth-child(2){
+        width: 90%;
+    }
+    
+   .campo input[type='text'], input[type='email'],input[type='password']{
+        width:88%;
+    }
+    fieldset, .conteiner-user .sexo, select{
+        width: 60px;
+    }
+
+    .telefone input[type="text"]:nth-child(1){
+        width: 50px;
+    } 
+    .telefone input[type="text"]:nth-child(2){
+        width: 100px;
+    } 
 }
