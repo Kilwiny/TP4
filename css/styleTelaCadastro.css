@@ -87,7 +87,7 @@ main {
   /* border: solid 1px black;*/
 }
 
-.campo input[type="text"]{
+.campo #nome{
     width: 90%;
 }
 /*terminar de construir e colocar media-query*/
@@ -251,8 +251,10 @@ input[type="checkbox"] {
 .telefone, input[type='text']:nth-child(2){
     width: 130px;
 }
-@media screen and (min-width:900px)  and (max-width:1024px){
-    
+@media screen and (min-width:800px)  and (max-width:1000px){
+    .termos label{
+        font-size: 15px;
+    }
 }    
 @media screen and (min-width: 700px) and (max-width:800px) {
     .formulario{
@@ -264,34 +266,59 @@ input[type="checkbox"] {
     .formulario{
         width: 70vw;
     }
+
+    .termos label{
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 400px) and (max-width:500px) {
     .formulario{
         width: 85vw;
     }
+    .termos label{
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 300px) and (max-width:400px) {
     .formulario{
-        width: 90vw;
+        width: 95vw;
     }
     
-    input[type='text'], input[type='email'], input[type='password'],select:nth-child(2){
-        width: 90%;
+    .formulario fieldset .campo #nome{
+        width: 80%;
+    }
+    input[type='text'], input[type='email'], input[type='password'],select:nth-child(2),textarea{
+        width: 80%;
     }
     
-   .campo input[type='text'], input[type='email'],input[type='password']{
-        width:88%;
+    fieldset, .conteiner-use{
+        justify-content: space-between;
     }
     fieldset, .conteiner-user .sexo, select{
         width: 60px;
     }
 
+    fieldset .conteiner-user .dataNascimento label{
+       visibility: hidden;
+    }
+
+    fieldset .conteiner-user .dataNascimento label::before{
+        visibility: visible;
+        content: "Nasc";
+    }
+
     .telefone input[type="text"]:nth-child(1){
         width: 50px;
+        font-size: 12px;
     } 
     .telefone input[type="text"]:nth-child(2){
         width: 100px;
+        font-size: 12px;
     } 
+    .termos label{
+        font-size: 15px;
+    }
+
 }
